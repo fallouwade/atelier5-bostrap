@@ -1,8 +1,13 @@
+body{
+  box-sizing: border-box;
+}
+
 .color-logo{
 	    color: #f5d500 !important;
 }
 .btn4{
 	background-color: #f5d500 !important;
+  width: 100%;
 }
 .logo{
 	margin-right: 0.8rem !important;
@@ -11,7 +16,9 @@
 	    padding: 0 0.3em !important;
     margin: 0.667em 1em !important;
     font-weight: 500 !important;
-        font-family: 'Space Grotesk' !important;   
+        font-family: 'Space Grotesk', sans-serif !important;  
+        font-size: 1.1rem !important; 
+
 }
 .nav-link:hover{
   color: #f5d500 !important;
@@ -24,22 +31,37 @@
     .btn1{
     	border: 2px solid black !important;
     	font-weight: 600 !important;
-    	padding: 10px 25px !important;
+    	padding: 10px 20px !important;
     }
     .bg1{
     	    padding-top: 8rem;
     		padding-bottom: 3rem;
     background-size: cover;
     	background-repeat: no-repeat;
+          pointer-events: none;
+    background-attachment: fixed !important ;
        background:linear-gradient(transparent, #000), url("img/img1.jpg") ;
     }
+    .img{
+      width: 47vw !important;
+    }
+    .bg1 h2{
+          font-family: 'Space Grotesk', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+    }
     .h1_taco{
-    	font-family: sans-serif !important;
-    font-size: 15.5rem !important;
+    	    font-family: 'Space Grotesk', sans-serif;
+    font-size: 17rem;
+    line-height: 0.85;
+    font-weight: 400;
 }
+
+
   .sec1 h3, .sec5 div h3{
   	    font-family: sans-serif;
-    font-size: 3.8rem;
+    font-size: 3.9rem;
     line-height: 1.1;
     
   }
@@ -49,15 +71,23 @@
   	font-family: sans-serif;
   }
   .para1, .para5{
-  	    font-family:sans-serif; 
+  	    font-family: sans-serif; 
     font-size: 1.9rem;
     line-height: 1.2;
-  }
+    font-weight: 300 !important;
+
+    }
+    
+    .border-bottom1{
+      border-bottom: 1px solid black !important
+    }
 
   .sec2{
   	background-image: url(img/img3.jpg);
   	background-size: cover;
   	background-repeat: no-repeat;
+      background-attachment: fixed !important ;
+
 
   }
   .sec3{
@@ -67,15 +97,15 @@
   }
   .sec3 h3 {
   	font-size: 3.8rem !important;
-  	font-weight: 300;
+  	font-weight: 500;
 
   }
   .sec3 h4{
-  	font-weight: 300 !important;
+  	font-weight: 500 !important;
   }
   .sec3 div input {
   	border: none;
-  	border-bottom: 1px solid white;
+  	border-bottom: 1px solid black;
   }
 @media screen and (max-width: 768px){
 
@@ -83,4 +113,8 @@
       
     font-size: 110px !important;
    
-}}
+}
+  
+  .img {
+    width:100% !important;
+}
